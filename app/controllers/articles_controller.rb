@@ -10,6 +10,10 @@ class ArticlesController < ApplicationController
     redirect_to @article
   end
 
+  def show
+    @article = Article.find(params[:id])
+  end
+
 end
 
 private
